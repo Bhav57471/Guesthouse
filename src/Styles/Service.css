@@ -1,0 +1,72 @@
+.container {
+  display: flex;
+  flex-direction: column; /* Stack the elements vertically */
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.main-title {
+  
+    font-size: 18px;
+    color: #8c8c8c;
+    margin-bottom: 10px;
+  }
+
+.bg-image-container {
+  flex: 1;
+  background-image: url('/public/Images/palash.webp'); /* Replace with the actual image URL */
+  background-size: cover;
+  background-position: center;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Center the text-container horizontally and vertically */
+  color: white;
+  padding: 150px;
+  width: 100%; /* Full width container */
+}
+
+.text-container {
+  background: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+  padding: 20px;
+  border-radius: 10px;
+  width: 30%; /* Adjust the width as needed */
+  text-align: center; /* Center the text inside the container */
+}
+
+.subtitle {
+  font-size: 24px; /* Adjust the font size for the subtitle */
+  margin-bottom: 20px; /* Space between subtitle and the service list */
+  font-weight: bold;
+}
+
+.services-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.service-item {
+  font-size: 18px; /* Adjust the font size for the service items */
+  margin-bottom: 15px;
+}
+
+.service-item i {
+  margin-right: 10px; /* Space between icon and text */
+}
+
+.icon-security:before {
+  content: "\1F512"; /* Unicode character for a lock */
+}
+
+.icon-room-service:before {
+  content: "\1F4E4"; /* Unicode character for an inbox tray */
+}
+
+.icon-restaurant:before {
+  content: "\1F374"; /* Unicode character for a fork and knife */
+}
+
+.icon-tourist-guide:before {
+  content: "\1F5FA"; /* Unicode character for a world map */
+}
