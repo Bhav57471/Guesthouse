@@ -15,7 +15,6 @@
 
 .bg-image-container {
   flex: 1;
-  background-image: url('/public/Images/palash.webp'); /* Replace with the actual image URL */
   background-size: cover;
   background-position: center;
   border-radius: 10px;

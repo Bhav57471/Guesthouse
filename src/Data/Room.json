@@ -1,23 +1,24 @@
 [
     {
-        "id": 1,
-        "title": "Cozy Haven Room",
-        "description": "Escape to comfort in our Cozy Haven Room, a snug retreat designed for intimate relaxation.",
-        "price": "Rs. 1000/night",
-        "image": "/Images/small.jpg"
+      "id": 1,
+      "title": "Deluxe Room",
+      "description": "A spacious room with all modern amenities and a beautiful view.",
+      "price": "$120/night",
+      "image": "/Images/room1.jpg"
     },
     {
-        "id": 2,
-        "title": "Spacious Serenity Suite",
-        "description": "Indulge in luxury and ample space in our Spacious Serenity Suite, where tranquility meets roomy elegance.",
-        "price": "Rs. 1500/night",
-        "image": "/Images/large.jpg"
+      "id": 2,
+      "title": "Executive Suite",
+      "description": "A luxurious suite with a king-size bed and a private balcony.",
+      "price": "$200/night",
+      "image": "/Images/small.jpg"
     },
     {
-        "id": 3,
-        "title": "Elegant Comfort Suite",
-        "description": "Experience elegance and comfort in our Elegant Comfort Suite, perfect for relaxation and leisure.",
-        "price": "Rs. 2000/night",
-        "image": "/Images/recep.jpg"
+      "id": 3,
+      "title": "Standard Room",
+      "description": "A comfortable room with essential facilities at an affordable price.",
+      "price": "$80/night",
+      "image": "/Images/recep.jpg"
     }
-]
+  ]
+  

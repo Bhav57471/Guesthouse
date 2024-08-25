@@ -1,35 +1,41 @@
-import React from 'react';
-import '../Styles/Header.css'; // Import the CSS file
+import React, { useState } from 'react';
+import '../Styles/Header.css';
 
 function Header() {
-    return (
-        <div className="home-container">
-      <Header className="navbar">
-        <div className="logo">
-          <a href="/">Logo</a>
-        </div>
-        <nav className="nav-links">
-          <a href="/">Home</a>
-          <a href="#about">About</a>
-          <a href="#services">Services</a>
-          <a href="#rooms">Rooms</a>
-          <a href="#gallery">Gallery</a>
-          <a href="#contact">Contact</a>
-        </nav>
-        <div className="book-now">
-          <button>BOOK NOW</button>
-        </div>
-      </Header>
+  const [menuOpen, setMenuOpen] = useState(false);
 
-      <div className="hero-section">
-        <div className="overlay"></div>
-        <div className="hero-text">
-          <h2 style={{color:"white"}}>Make Yourself At Home In Our <span className="highlight">Guest House</span></h2>
-          <p>Simple • Unique • Friendly</p>
-          <button className="hero-button">BOOK NOW</button>
-        </div>
-      </div>
-    </div>
+  const toggleMenu = () => {
+      setMenuOpen(!menuOpen);
+  };
+
+  return (
+      <header className="header">
+          <nav>
+              <div className="nav__bar">
+                  <div className="logo">
+                      <a href="https://wa.link/at5ion">
+                          <span style={{ color: 'aliceblue' }}>Kingsukh Guest House</span>
+                      </a>
+                  </div>
+                  <div className="nav__menu__btn" onClick={toggleMenu}>
+                      <i className={menuOpen ? "ri-close-line" : "ri-menu-line"}></i>
+                  </div>
+              </div>
+              <ul className={`nav__links ${menuOpen ? 'open' : ''}`}>
+                  <li><a href="#home">Home</a></li>
+                  <li><a href="#about">About</a></li>
+                  <li><a href="#service">Services</a></li>
+                  <li><a href="#rooms">Rooms</a></li>
+                  <li><a href="#gallery">Gallery</a></li>
+                  <li><a href="#contact">Contact</a></li>
+              </ul>
+              <button className="btn nav__btn">BOOK NOW</button>
+          </nav>
+          <div className="section__container header__container" id="home">
+              <p>Simple - Unique - Friendly</p>
+              <h1>Make Yourself At Home<br />In Our <span>Guest House</span>.</h1>
+          </div>
+      </header>
     );
 }
 
